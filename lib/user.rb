@@ -1,6 +1,6 @@
 class User
-  attr_accessor :pinned
-  attr_reader :summary
+  attr_writer :name, :nickname, :work, :bio, :location, :website, :pinned
+  attr_reader :pinned, :summary, :name, :nickname, :work, :bio, :location, :website
 
   def initialize
     @summary = []
