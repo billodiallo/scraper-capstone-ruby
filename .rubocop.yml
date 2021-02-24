@@ -50,8 +50,6 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
-Style/BisectedAttrAccessor:
-  Enabled: false
 Security/Open:
   Enabled: false
 
