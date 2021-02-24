@@ -52,5 +52,8 @@ Style/HashTransformValues:
   Enabled: false
 Security/Open:
   Enabled: false
+  Lint/ScriptPermission:
+  Enabled: false
+
 
   
