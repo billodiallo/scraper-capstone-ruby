@@ -86,15 +86,15 @@ class Scraper
     @user.location = (location ? location.text : '![ field blank ]')
   end
 
-  # def website
-  #   website = @profile_page.css('li.vcard-detail a')[1]
-  #   @user.website = (website ? website.text : '![ field blank ]')
-  # end
+  def website
+    website = @profile_page.css('li.vcard-detail a')[1]
+    @user.website = (website ? website.text : '![ field blank ]')
+  end
 
-  # def bio
-  #   bio = @profile_page.css('div.user-profile-bio')[0]
-  #   @user.bio = (bio ? bio.text.gsub(/\n/, '') : '![ field blank ]')
-  # end
+  def bio
+    bio = @profile_page.css('div.user-profile-bio')[0]
+    @user.bio = (bio ? bio.text.gsub(/\n/, '') : '![ field blank ]')
+  end
 
   # def pinned_repos
   #   pinned_repos = @profile_page.css('.pinned-item-list-item')
