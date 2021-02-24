@@ -1,4 +1,4 @@
-require_relative 'user.rb'
+require_relative 'user'
 
 require 'nokogiri'
 require 'open-uri'
@@ -15,11 +15,11 @@ class Scraper
 
     @valid = true
     begin
-        @profile_page = Nokogiri::HTML.parse(URI.open(@user_url))
+      @profile_page = Nokogiri::HTML.parse(URI.open(@user_url))
     rescue StandardError
       @valid = false
       return
-      end
+    end
 
     name
     nickname
@@ -34,13 +34,14 @@ class Scraper
   def page(page)
     exit if page == 'q'
 
-    page_url = @user_url + '?tab=' + page
+    page_url = "#{@user_url}?tab=#{page}"
     @html = Nokogiri::HTML.parse(URI.open(page_url))
 
-    if page == 'repositories' then repos
-    elsif page == 'stars' then stars
-    elsif page == 'followers' then followers
-    elsif page == 'following' then following
+    case page
+    when 'repositories' then repos
+    when 'stars' then stars
+    when 'followers' then followers
+    when 'following' then following
     else
       ['Error!, category invalid']
     end
