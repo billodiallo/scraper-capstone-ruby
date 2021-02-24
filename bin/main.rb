@@ -30,8 +30,8 @@ end
 
 def display_prompt(summary_info, scraper)
   puts ''
-  puts "repositories: #{(summary_info[7]).to_s.red}"
-  puts "stars: #{(summary_info[9]).to_s.red}"
+  puts "repositories: #{(summary_info[6]).to_s.red}"
+  puts "stars: #{(summary_info[5]).to_s.red}"
   puts "followers: #{(summary_info[10]).to_s.red}"
   puts "following: #{(summary_info[11]).to_s.red}"
   puts ''
@@ -49,7 +49,7 @@ end
 puts ''
 puts 'Welcome!. This is a github scraping tool.'
 puts ''
-puts 'All you have to do is input any github username and it shall do the rest.'
+puts 'Enter your github username and follow the instructions.'
 
 display_output(Array.new(18, 'xxxxx'))
 
