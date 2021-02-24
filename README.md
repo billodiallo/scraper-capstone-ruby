@@ -57,7 +57,7 @@ When you first run this github scraping tool it begins by showing you the summar
 ```
    Github User
   -------------------------------  
-  Name: xxxxxx (xxxxxx)  
+  Name: xxxxxx (xxxxxxx)  
   Bio: xxxxxx  
   Work: xxxxxx  
   Location: xxxxxx  
