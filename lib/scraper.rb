@@ -113,39 +113,39 @@ class Scraper
     @user.summary
   end
 
-  # def repos
-  #   repos = @html.css('li.public')
-  #   repoz = []
-  #   repos.each do |repo|
-  #     repoz << repo.css('h3').text.gsub(/\n/, '').gsub(' ', '')
-  #   end
-  #   repoz
-  # end
+  def repos
+    repos = @html.css('li.public')
+    repoz = []
+    repos.each do |repo|
+      repoz << repo.css('h3').text.gsub(/\n/, '').gsub(' ', '')
+    end
+    repoz
+  end
 
-  # def stars
-  #   stars = @html.css('div.d-block')
-  #   starz = []
-  #   stars.each do |star|
-  #     starz << star.css('h3').text.gsub(/\n/, '').gsub(' ', '')
-  #   end
-  #   starz
-  # end
+  def stars
+    stars = @html.css('div.d-block')
+    starz = []
+    stars.each do |star|
+      starz << star.css('h3').text.gsub(/\n/, '').gsub(' ', '')
+    end
+    starz
+  end
 
-  # def followers
-  #   followers = @html.css('div.table-fixed')
-  #   followerz = []
-  #   followers.each do |follower|
-  #     followerz << follower.css('span.f4').text
-  #   end
-  #   followerz
-  # end
+  def followers
+    followers = @html.css('div.table-fixed')
+    followerz = []
+    followers.each do |follower|
+      followerz << follower.css('span.f4').text
+    end
+    followerz
+  end
 
-  # def following
-  #   following = @html.css('div.table-fixed')
-  #   followingz = []
-  #   following.each do |user|
-  #     followingz << user.css('span.f4').text
-  #   end
-  #   followingz
-  # end
+  def following
+    following = @html.css('div.table-fixed')
+    followingz = []
+    following.each do |user|
+      followingz << user.css('span.f4').text
+    end
+    followingz
+  end
 end
