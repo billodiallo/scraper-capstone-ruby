@@ -31,11 +31,11 @@ class Scraper
     counters
   end
 
-  def page(page)
-    exit if page == 'q'
+  # def page(page)
+  #   exit if page == 'q'
 
-    page_url = "#{@user_url}?tab=#{page}"
-    @html = Nokogiri::HTML.parse(URI.open(page_url))
+  #   page_url = "#{@user_url}?tab=#{page}"
+  #   @html = Nokogiri::HTML.parse(URI.open(page_url))
 
     case page
     when 'repositories' then repos
