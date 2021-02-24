@@ -31,11 +31,11 @@ class Scraper
     counters
   end
 
-  # def page(page)
-  #   exit if page == 'q'
+  def page(page)
+    exit if page == 'q'
 
-  #   page_url = "#{@user_url}?tab=#{page}"
-  #   @html = Nokogiri::HTML.parse(URI.open(page_url))
+    page_url = "#{@user_url}?tab=#{page}"
+    @html = Nokogiri::HTML.parse(URI.open(page_url))
 
     case page
     when 'repositories' then repos
@@ -47,22 +47,22 @@ class Scraper
     end
   end
 
-  def profile_info
-    user_summary = []
-    [
-      @user.name,
-      @user.nickname,
-      @user.bio,
-      @user.work,
-      @user.location,
-      @user.website
-    ].each { |item| user_summary << item }
+  # def profile_info
+  #   user_summary = []
+  #   [
+  #     @user.name,
+  #     @user.nickname,
+  #     @user.bio,
+  #     @user.work,
+  #     @user.location,
+  #     @user.website
+  #   ].each { |item| user_summary << item }
 
-    @user.summary.each { |item| user_summary << item }
-    @user.pinned.each { |item| user_summary << item }
+  #   @user.summary.each { |item| user_summary << item }
+  #   @user.pinned.each { |item| user_summary << item }
 
-    user_summary
-  end
+  #   user_summary
+  # end
 
   private
 
