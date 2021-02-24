@@ -96,22 +96,22 @@ class Scraper
     @user.bio = (bio ? bio.text.gsub(/\n/, '') : '![ field blank ]')
   end
 
-  # def pinned_repos
-  #   pinned_repos = @profile_page.css('.pinned-item-list-item')
-  #   pinned = []
-  #   pinned_repos.each do |item|
-  #     pinned << item.css('span.repo').text
-  #   end
-  #   @user.pinned = pinned
-  # end
+  def pinned_repos
+    pinned_repos = @profile_page.css('.pinned-item-list-item')
+    pinned = []
+    pinned_repos.each do |item|
+      pinned << item.css('span.repo').text
+    end
+    @user.pinned = pinned
+  end
 
-  # def counters
-  #   nav = @profile_page.css('.UnderlineNav-item')
-  #   nav.each do |item|
-  #     @user.summary << item.css('.Counter').text.gsub(/\n/, '').gsub(' ', '').to_i
-  #   end
-  #   @user.summary
-  # end
+  def counters
+    nav = @profile_page.css('.UnderlineNav-item')
+    nav.each do |item|
+      @user.summary << item.css('.Counter').text.gsub(/\n/, '').gsub(' ', '').to_i
+    end
+    @user.summary
+  end
 
   # def repos
   #   repos = @html.css('li.public')
