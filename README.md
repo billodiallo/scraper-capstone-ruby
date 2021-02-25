@@ -11,7 +11,7 @@ A Github Scraping Tool developed with Ruby and the Nokogiri gem
 ![ruby-capstone2](https://user-images.githubusercontent.com/11162987/109022267-b8c11680-76cc-11eb-9599-5cbc255b4a4b.PNG)
 ![ruby-capstone3](https://user-images.githubusercontent.com/11162987/109022276-b9f24380-76cc-11eb-85f1-1ba143e6ecf8.PNG)
 ![ruby-capstone1](https://user-images.githubusercontent.com/11162987/109022278-ba8ada00-76cc-11eb-80ff-392523aebcc2.PNG)
-![tescase1-capstone](https://user-images.githubusercontent.com/11162987/109027257-a7c6d400-76d1-11eb-81b8-4fe11b090d83.PNG)
+![![test2-capstone](https://user-images.githubusercontent.com/11162987/109165272-69dab600-778c-11eb-93b3-5e1500091670.PNG))
 <br />
 <p align="center">
   <a href="https://github.com/billodiallo/scraper-capstone-ruby">
