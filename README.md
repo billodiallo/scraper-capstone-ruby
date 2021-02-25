@@ -101,6 +101,9 @@ This project was built using these technologies.
 If you wish to test it. Install `Rspec`with `gem install rspec`. Clone this repo to your local machine, cd into github-scraper directory and run `rspec`
 
 <!-- LIVE VERSION -->
+### LIVE DEMO VIDEO
+
+https://www.loom.com/share/7c3fe4266fe14804bf0382caa08424a5
 
 
 <!-- CONTACT -->
