@@ -1,4 +1,4 @@
-require_relative 'user.rb'
+require_relative 'user'
 
 require 'nokogiri'
 require 'open-uri'
@@ -127,6 +127,7 @@ class Scraper
     starz = []
     stars.each do |star|
       starz << star.css('h3').text.gsub(/\n/, '').gsub(' ', '')
+      puts star.css('h3').text.gsub(/\n/, '').gsub(' ', '')
     end
     starz
   end

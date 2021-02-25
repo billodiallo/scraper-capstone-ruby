@@ -6,7 +6,7 @@ AllCops:
   DisplayCopNames: true
 
 Layout/LineLength:
-  Max: 120
+  Max: 250
 Metrics/MethodLength:
   Max: 30
 Metrics/AbcSize:
@@ -54,7 +54,7 @@ Security/Open:
   Enabled: false
   Lint/ScriptPermission:
   Enabled: false
-Layout/Tab:
- Enabled: false
+# Layout/Tab:
+#  Enabled: false
 
   

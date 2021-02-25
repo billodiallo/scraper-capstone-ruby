@@ -7,7 +7,7 @@ A Github Scraping Tool developed with Ruby and the Nokogiri gem
 [![Issues][issues-shield]][issues-url]
 
 
-<!-- PROJECT LOGO -->
+<!-- PROJECT SCRENSHOOT -->
 ![ruby-capstone2](https://user-images.githubusercontent.com/11162987/109022267-b8c11680-76cc-11eb-9599-5cbc255b4a4b.PNG)
 ![ruby-capstone3](https://user-images.githubusercontent.com/11162987/109022276-b9f24380-76cc-11eb-85f1-1ba143e6ecf8.PNG)
 ![ruby-capstone1](https://user-images.githubusercontent.com/11162987/109022278-ba8ada00-76cc-11eb-80ff-392523aebcc2.PNG)
@@ -15,7 +15,6 @@ A Github Scraping Tool developed with Ruby and the Nokogiri gem
 <br />
 <p align="center">
   <a href="https://github.com/billodiallo/scraper-capstone-ruby">
-    <img src="" alt="Logo" width="80" height="80">
   </a>
 
   <h1 align="center">My Github Scraper</h1>
@@ -29,7 +28,7 @@ A Github Scraping Tool developed with Ruby and the Nokogiri gem
   * [Testing](#testing)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
-* [License](#license)
+
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -43,7 +42,7 @@ This is Github Scrapping Tool built with ruby. This Tools is built as a capstone
 
 To use this scraper this is what you need to:
 * Have ruby installed in your computer
-* [Download]() or clone this repo:
+* [Download](https://github.com/billodiallo/scraper-capstone-ruby.git) or clone this repo:
   - Clone with SSH:
   ```
    https://github.com/billodiallo/scraper-capstone-ruby.git
@@ -102,9 +101,7 @@ This project was built using these technologies.
 If you wish to test it. Install `Rspec`with `gem install rspec`. We used `rspec 3.9.1` but any version not older than `3.0`should work fine. Clone this repo to your local machine, cd into github-scraper directory and run `rspec`
 
 <!-- LIVE VERSION -->
-## Live version
 
-## Video Demo
 
 <!-- CONTACT -->
 ## Contact

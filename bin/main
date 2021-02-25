@@ -28,15 +28,9 @@ def display_output(array)
 end
 # rubocop:enable Metrics/AbcSize
 
-def display_prompt(summary_info, scraper)
+def display_prompt(_summary_info, scraper)
   puts ''
-  puts "repositories: #{(summary_info[6]).to_s.red}"
-  puts "stars: #{(summary_info[5]).to_s.red}"
-  puts "followers: #{(summary_info[10]).to_s.red}"
-  puts "following: #{(summary_info[11]).to_s.red}"
-  puts ''
-  puts "Enter a category name like #{'repositories'.red} or #{'stars'.red} to get a list of its contents."
-
+  puts "Enter a category name like #{'repositories'.red} or #{'stars'.red} or #{'followers'.red} or #{'following'.red} to get a list of its contents."
   puts "Or Enter #{'\'q\''.red} to exit the program."
 
   puts ''
