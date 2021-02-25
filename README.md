@@ -84,7 +84,7 @@ After this, you are prompted to enter a valid github username. Then it returns t
   ---------------------------------
   repositories: xxxxxx
   stars: xxxxxx
-  followers: xxxxxx
+  followers: xxxxxxx
   following: xxxxxx
   ----------------------------------
 ```
