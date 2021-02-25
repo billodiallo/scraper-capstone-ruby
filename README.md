@@ -88,7 +88,7 @@ After this, you are prompted to enter a valid github username. Then it returns t
   following: xxxxxx
   ----------------------------------
 ```
-Then you will be prompted to enter a category name to see a full list of its contents. For instance enter `repositories` or `stars` to get a list of those scrapped categories. This will continue until you exit the program by typing `'q'` in the terminal and pressing Enter.
+Then you will be prompted to enter a category name to see a full list of its contents. For instance enter `repositories` or `stars`, or  `followers` or `following`  to get a list of those scrapped categories. This will continue until you exit the program by typing `'q'` in the terminal and pressing Enter.
 
 ### Built With
 This project was built using these technologies.
@@ -98,7 +98,7 @@ This project was built using these technologies.
 * Colorize gem
 
 ### Testing
-If you wish to test it. Install `Rspec`with `gem install rspec`. We used `rspec 3.9.1` but any version not older than `3.0`should work fine. Clone this repo to your local machine, cd into github-scraper directory and run `rspec`
+If you wish to test it. Install `Rspec`with `gem install rspec`. Clone this repo to your local machine, cd into github-scraper directory and run `rspec`
 
 <!-- LIVE VERSION -->
 
@@ -119,5 +119,5 @@ If you wish to test it. Install `Rspec`with `gem install rspec`. We used `rspec 
 
 ## 📝 License
 
-This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+This project is [MIT](LICENSE) licensed.
 
