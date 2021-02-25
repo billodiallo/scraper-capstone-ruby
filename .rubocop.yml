@@ -52,7 +52,7 @@ Style/HashTransformValues:
   Enabled: false
 Security/Open:
   Enabled: false
-  Lint/ScriptPermission:
+Lint/ScriptPermission:
   Enabled: false
 # Layout/Tab:
 #  Enabled: false
