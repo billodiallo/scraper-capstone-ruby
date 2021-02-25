@@ -3,6 +3,7 @@ class User
 
   def initialize
     @summary = []
+
     @pinned	= []
   end
 end
