@@ -18,7 +18,6 @@ class Scraper
       @profile_page = Nokogiri::HTML.parse(URI.open(@user_url))
     rescue StandardError
       @valid = false
-      return
     end
   end
 
