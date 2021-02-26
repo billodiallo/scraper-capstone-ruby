@@ -1,11 +1,6 @@
 # Github Scraper
 A Github Scraping Tool developed with Ruby and the Nokogiri gem
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-
 
 <!-- PROJECT SCRENSHOOT -->
 ![ruby-capstone2](https://user-images.githubusercontent.com/11162987/109022267-b8c11680-76cc-11eb-9599-5cbc255b4a4b.PNG)
@@ -52,7 +47,7 @@ To use this scraper this is what you need to:
     github.com/billodiallo/scraper-capstone-ruby.git
   ```
 * `cd` into `scraper-capstone-ruby` directory and run `bundle install`
-* Finally, run `bin/main.rb` in your terminal.
+* Finally, run `bin/main` in your terminal.
 
 ## How to use
 When you first run this github scraping tool it begins by showing you the summary info output format
