@@ -6,21 +6,21 @@ A Github Scraping Tool developed with Ruby and the Nokogiri gem
 ![ruby-capstone2](https://user-images.githubusercontent.com/11162987/109022267-b8c11680-76cc-11eb-9599-5cbc255b4a4b.PNG)
 ![ruby-capstone3](https://user-images.githubusercontent.com/11162987/109022276-b9f24380-76cc-11eb-85f1-1ba143e6ecf8.PNG)
 ![ruby-capstone1](https://user-images.githubusercontent.com/11162987/109022278-ba8ada00-76cc-11eb-80ff-392523aebcc2.PNG)
-![![test2-capstone](https://user-images.githubusercontent.com/11162987/109165272-69dab600-778c-11eb-93b3-5e1500091670.PNG))
-<br />
+![![test2-capstone](https://user-images.githubusercontent.com/11162987/109165272-69dab600-778c-11eb-93b3-5e1500091670.PNG)
+
 <p align="center">
   <a href="https://github.com/billodiallo/scraper-capstone-ruby">
   </a>
 
-  <h1 align="center">My Github Scraper</h1>
+  <h1 align="center">My Github Scraper</h1> </p>
 
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
-  * [Testing](#testing)
+* [Built With](#built-with)
+* [Testing](#testing)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
@@ -42,7 +42,7 @@ To use this scraper this is what you need to:
   ```
    https://github.com/billodiallo/scraper-capstone-ruby.git
   ```
-  - Clone with HTTPS
+- Clone with HTTPS
   ```
     github.com/billodiallo/scraper-capstone-ruby.git
   ```
