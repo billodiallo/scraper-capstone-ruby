@@ -20,15 +20,6 @@ class Scraper
       @valid = false
       return
     end
-
-    name
-    nickname
-    work
-    bio
-    location
-    website
-    pinned_repos
-    counters
   end
 
   def page(page)

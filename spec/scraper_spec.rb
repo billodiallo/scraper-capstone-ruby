@@ -171,7 +171,7 @@ RSpec.describe Scraper do
     end
 
     it 'negative scenario' do
-      result = scraper1.send(:page, 'another')
+      result = scraper1.send(:page, 'another1')
       expect(result).not_to eql(Array)
     end
   end
