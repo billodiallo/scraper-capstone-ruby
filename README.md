@@ -1,63 +1,121 @@
-# Ruby Course
+# Github Scraper
+A Github Scraping Tool developed with Ruby and the Nokogiri gem
 
-If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
 
-## Set-up Rubocop GitHub Action
+<!-- PROJECT SCRENSHOOT -->
+![ruby-capstone2](https://user-images.githubusercontent.com/11162987/109022267-b8c11680-76cc-11eb-9599-5cbc255b4a4b.PNG)
+![ruby-capstone3](https://user-images.githubusercontent.com/11162987/109022276-b9f24380-76cc-11eb-85f1-1ba143e6ecf8.PNG)
+![ruby-capstone1](https://user-images.githubusercontent.com/11162987/109022278-ba8ada00-76cc-11eb-80ff-392523aebcc2.PNG)
+![![test2-capstone](https://user-images.githubusercontent.com/11162987/109165272-69dab600-778c-11eb-93b3-5e1500091670.PNG)
 
-[Rubocop](https://www.rubocop.org/) is a Ruby static code analyzer (a.k.a. linter) and code formatter. It will enforce many of the guidelines outlined in the community [Ruby Style Guide](https://rubystyle.guide/).
+<p align="center">
+  <a href="https://github.com/billodiallo/scraper-capstone-ruby">
+  </a>
 
-This GitHub Action is going to run [Rubocop](https://docs.rubocop.org/en/stable/) to help you find style issues.
+  <h1 align="center">My Github Scraper</h1> </p>
 
-Please do the following **steps in this order**:
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-    - **Remember** to use the file linked above
-    - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub Actions:
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-![gh actions checks](../assets/images/gh-actions-rubocop-linters-checks.png)
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
+* [Testing](#testing)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
 
-Click on the `Details` link to see the full output and the errors that need to be fixed:
 
-![gh actions failing checks](../assets/images/gh-actions-rubocop-failing-checks.png)
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-## [OPTIONAL]Set-up RSpec GitHub Action
+This is Github Scrapping Tool built with ruby. This Tools is built as a capstone project for completing one of Microverse's Main Technical Curriculum sections.
 
-You can run your tests with GitHub Actions to ensure that they are passing before merging a PR.
+[![Product Name Screen Shot][product-screenshot]][screenshot-url]
 
-To use the GitHub Action to run your tests, please do the following **steps in this order**:
+<!-- ABOUT THE PROJECT -->
+## Installation
 
-1. Add a copy of [`.github/workflows/tests.yml`](.github/workflows/tests.yml) to your `.github/workflows` folder.
-    - **Remember** to use the file linked above
-    - Do not modify or delete the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) file that should already be in that folder.
-    - RSpec by default will try to run any file ending in `_spec.rb` inside the `spec` folder. Make sure to follow this convention for your tests files so `rspec` can run your spec files.
-    - You can modify the [`.github/workflows/tests.yml`](.github/workflows/tests.yml) file to better fit your custom needs.
-3. When you open your pull request you should see the result of the GitHub Action:
+To use this scraper this is what you need to:
+* Have ruby installed in your computer
+* [Download](https://github.com/billodiallo/scraper-capstone-ruby.git) or clone this repo:
+  - Clone with SSH:
+  ```
+   https://github.com/billodiallo/scraper-capstone-ruby.git
+  ```
+- Clone with HTTPS
+  ```
+    github.com/billodiallo/scraper-capstone-ruby.git
+  ```
+* `cd` into `scraper-capstone-ruby` directory and run `bundle install`
+* Finally, run `bin/main` in your terminal.
 
-![gh actions checks](../assets/images/gh-actions-rspec-tests-checks.png)
+## How to use
+When you first run this github scraping tool it begins by showing you the summary info output format
 
-Click on the `Details` link of the test action to check the results of your tests.
+```
+   Github User
+  -------------------------------  
+  Name: xxxxxx (xxxxxxx)  
+  Bio: xxxxxx  
+  Work: xxxxxx  
+  Location: xxxxxx  
+  Website: xxxxxx  
+  ---------------------------------
+  pinned Repositories
+  ---------------------------------
+  1. xxxxxx
+  2. xxxxxx
+  3. xxxxxx
+  4. xxxxxx
+  5. xxxxxx
+  6. xxxxxx
+  --------------------------------
+```
 
-## Set-up linters in your local env
+After this, you are prompted to enter a valid github username. Then it returns the above output format with all the information filled in.
 
-### [RuboCop](https://docs.rubocop.org/en/stable/)
+```
+  Categories
+  ---------------------------------
+  repositories: xxxxxx
+  stars: xxxxxx
+  followers: xxxxxxx
+  following: xxxxxx
+  ----------------------------------
+```
+Then you will be prompted to enter a category name to see a full list of its contents. For instance enter `repositories` or `stars`, or  `followers` or `following`  to get a list of those scrapped categories. This will continue until you exit the program by typing `'q'` in the terminal and pressing Enter.
 
-1. Add `gem 'rubocop', '~>0.81.0'` to `Gemfile` (not sure how to use Gemfile? Read [this](https://bundler.io/v1.15/guides/bundler_setup.html)).
-2. Run `bundle install`.
-3. Copy [.rubocop.yml](./.rubocop.yml) to the root directory of your project
-4. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-5. Run `rubocop`.
-6. Fix linter errors.
-7. **IMPORTANT NOTE**: feel free to research [auto-correct options for Rubocop](https://rubocop.readthedocs.io/en/latest/auto_correct/) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+### Built With
+This project was built using these technologies.
+* Ruby
+* Rspec
+* Nokogiri gem
+* Colorize gem
 
-## Troubleshooting
+### Testing
+If you wish to test it. Install `Rspec`with `gem install rspec`. Clone this repo to your local machine, cd into github-scraper directory and run `rspec`
 
-- While using Colorize gem, if you are facing errors with Rspec related to 
-    ```bash
-    LoadError:
-    cannot load such file -- colorize
-    ```
-    please remove ```--deployment``` from line no. [26](https://github.com/shubham14p3/Ruby-capstone-project/blob/ca86784cc88bea7c933e329c0953f07e21bcf6ca/.github/workflows/tests.yml#L16) of test.yml file.
+<!-- LIVE VERSION -->
+### LIVE DEMO VIDEO
+
+https://www.loom.com/share/7c3fe4266fe14804bf0382caa08424a5
+
+
+<!-- CONTACT -->
+## Contact
+
+👤 Billo Dallio
+
+- GitHub: [@billodiallo](https://github.com/billodiallo)
+- Twitter: [@BilloDi83547008](https://twitter.com/BilloDi83547008)
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [Microverse](https://www.microverse.org/)
+* [Ruby Documentation](https://www.ruby-lang.org/en/documentation/)
+
+
+## 📝 License
+
+This project is [MIT](LICENSE) licensed.
+
